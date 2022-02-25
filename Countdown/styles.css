@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+    "countdown rocket";
+}
+
+.countdownBox {
+    margin: 27vh 0 0 80px;
+    padding: 0;
+    width: 494px;
+    height: 172px; 
+    /* background-color:var(--black); */
+    text-align: center;
+}
+
+.readyText {
+    margin: 0 0 25px 0;
+    color: var(--purple);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 6px; 
+    text-align: center;
+}
+
+.countdown {
+    margin: 0;
+    padding: 0;
+    width: 494px;
+    height: 99px;
+    /* background-color:#6C63FF; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.units {
+    margin: 0 30px 0 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: light;
+    font-size: 14px;
+    color: var(--light-grey);
+}
+
+#timer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 72px;
+    color: var(--black);
+    width: 494px;
+    display: flex;
+    justify-content:space-around;
+    position: absolute;
+    text-align: center;
+}
+
+#timer div{
+    width: 494px;
+    margin: 5px 10px 10px 0;
+}
+
+.text {
+    margin: 50px 0 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.buttonSub{
+    margin: 50px 0 0 0;
+    width: 160px;
+    height: 46px;
+    background-color: var(--purple);
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+}
+
+.rocket {
+    margin: 0 60px 0 0;
+    width: 607px;
+    height: 435px;
+    position: absolute;
+    right: 0;
+    top: 25vh;
+    background-image: url(./images/rocket.svg)
+}
+
+/* Estilizando a janela de Modal */
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container .mostrar {
+    display: flex;
+}
+
+.modal {
+    background: white;
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    border: 5px solid var(--purple);
+    position: relative;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: modal .3s;
+}
+
+.close {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid var(--purple);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+    outline: 0;
+    color: black;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
