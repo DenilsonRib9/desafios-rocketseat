@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+* {
+     margin: 0;
+}
+
+body {
+    background: var(--body-bg-color);
+    height: auto;
+}
+
+.container {
+    background: var(--body-bg-color);
+    height: auto;
+
+    display: flex;
+    gap: 3rem;
+}
+
+aside {
+    margin: 30px 0 0 30px;
+    padding: 0;
+
+    /* background: lightgray; */
+    height: auto;
+    flex-basis: 25%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+aside div {
+    background: var(--bg-cards);
+
+    border-radius: 8%;
+    box-shadow: 3px 3px rgba(0, 0, 0, .2)
+}
+
+.person {
+    width: 348px;
+    height: 292px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person img {
+    margin-top: 2rem;
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+
+    border: 2px solid #00FF00;
+
+}
+
+.person p:nth-child(2) {
+    margin-top: 1.5rem;
+
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--text-color);
+
+}
+
+.person p:nth-child(3) {
+    margin-top: .7rem;
+
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: light;
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+.contact {
+    width: 348px;
+    height: 348px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    line-height: 0;
+
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: var(--text-color)
+}
+
+.contact a {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.contact img {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.tecnologies {
+    width: 348px;
+    height: 208px;
+}
+
+h2 {
+    margin: 25px 0 0 20px;
+
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--text-color);
+    letter-spacing: 1.5px;
+}
+
+.tecnologies .badges {
+    margin-top: 1.5rem;
+
+    box-shadow: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.badgesIcon {
+    box-shadow: none;
+    border-radius: 30px;
+
+    width: 86px;
+    height: 24px;
+    background: var(--bg-techs);
+
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experiences {
+    width: 348px;
+    height: 348px;
+}
+
+.experiences .principal {
+    margin: 20px 0 0 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--text-color);
+
+    display: flex;
+    justify-content: left;
+}
+
+.experiences .ulSecondly {
+    list-style: none;
+    font-size: 12px;
+
+    list-style-position: left;
+}
+
+.experiences .ulSecondly:nth-child(1) {
+    font-weight: 400;
+}
+
+.experiences .ulSecondly:nth-child(2) {
+    font-weight: bold;
+}
+
+.education {
+    width: 348px;
+    height: 352px;
+}
+
+main {
+    margin: 30px 30px 0 0;
+    background: lightgray;
+    height: auto;
+    flex: 1;
+}
+
+footer {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--text-color);
+
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
