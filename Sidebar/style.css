@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+}
+
+* {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.menu {
+    width: 78px;
+    height: 100vh;
+
+    background: var(--green);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuIcons {
+    height: 24px;
+    width: 24px;
+}
+
+.boxIcon {
+    margin-top: 14px;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: transparent;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxIcon:hover {
+    background:#dce4e39f;
+}
+
+#menuBox {
+    background: transparent;
+    border: none;
+}
+
+#menuBox:hover {
+    background-color: #dce4e39f;
+}
+
+
+#searchBox {
+    background-color: lightgray;
+}
+
+#searchBox:hover {
+    background-color: #dce4e39f;
+}
+
+#logOutBox {
+    width: 78px;
+    height: 70px;
+    background: #dce4e39f;
+    position: absolute;
+    bottom: 0px;
+
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logOutBox:hover {
+    background: #dce4e3d3;
+}
+
+#logOutButton {
+    z-index: 999999;
+}
+
+.fullMenu {
+    display: none;
+    width: 250px;
+    height: 100vh;
+
+    background: var(--green);
+
+    flex-direction: column;
+    /* align-items: center; */
+
+    position: relative;
+}
+
+.topMenu{
+    margin-left: 25px;
+    margin-right: 5px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#logo {
+    margin-top: 10px;
+
+    width: 75px;
+    height: auto;
+}
+
+#menuBoxFull {
+    margin-top: 10px;
+
+    background: transparent;
+    border: none;
+}
+
+#menuBoxFull:hover {
+    background: #dce4e39f;
+}
+
+input {
+    margin: 0;
+
+    height: 45px;
+    width: 160px;
+    border-radius: 12px;
+    outline: 0;
+    border: 0;
+
+    background: #dce4e300;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+#searchBoxFull {
+    background: #dce4e39f;
+}
+
+.boxIconFull {
+    margin-top: 14px;
+    margin-left: 20px;
+
+    border: none;
+    background: transparent;
+
+    height: 51px;
+    width: 200px;
+
+    padding-left: 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.boxIconFull:hover {
+    background: #dce4e39f;
+} 
+
+.menuNames {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+#logOutBoxFull {
+    width: 100%;
+    height: 70px;
+    background: #dce4e39f;
+    position: absolute;
+    bottom: 0px;
+
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: .5rem;
+}
+
+#logOutBoxFull:hover {
+    background: #dce4e3d3;
+}
+
+.vetPhoto {
+    margin-left: 12px;
+    height: 45px;
+    width: 45px;
+    border-radius: 12px;
+}
+
+.vetInfos {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vetInfos p:nth-child(1) {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.vetInfos p:nth-child(2) {
+    font-size: 15px;
+    line-height: 15px;
+}
+
+#logOutButtonFull {
+    position: absolute;
+    right: 15px;
+}
+
+.dashboard {
+    height: 100vh;
+    flex: 1;
+    background: var(--light-grey);
+}
+
+h3 {
+    margin: 20px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    font-size: 25px;
+    color: var(--text-color);
+}
