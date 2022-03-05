@@ -1,0 +1,72 @@
+
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 102px
+}
+
+.container .toggle {
+    position: relative;
+    width: 235px;
+    height: 102px;
+    background: var(--label);
+    border-radius: 59px;
+    transition: .3s; 
+}
+
+.container .toggle .toggle-button {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 86px;
+    height: 86px;
+    background: var(--light);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+    transition: .3s;
+}
+
+.container .toggle.active .toggle-button {
+    left: 140px;
+}
+
+.container .icons {
+    height: 94px;
+    width: 94px;
+}
+
+.container #sun {
+    position: absolute;
+    right: 3px;
+    top: 5px;
+}
+
+.container #moon {
+    position: absolute;
+    left: 3px;
+    top: 5px;
+}
+
+.dark-theme {
+    background-color: var(--dark);
+    color: var(--light);
+}
